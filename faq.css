@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     gap: 400px;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left:0;

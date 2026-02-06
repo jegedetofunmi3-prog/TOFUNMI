@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="contact.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Crochet Store</title>
+    <link rel="stylesheet" href="login.css">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-<nav class="navbar">
+    <nav class="navbar">
         <div class="navdiv">
             <div class="logo">Ts Thread</div>
             <ul>
@@ -32,94 +32,42 @@
                 </li>
                 
                 
-                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
                  <a href="cart.html" class="cart-icon"></a>
           <i  class="fas fa-shopping-cart"></i>
           <!-- <span id="cart-count">0</span> -->
-            <button class="log"><a href="login.html">LogIn</a></button>
+            <button class="log"><a href="login.html" class="active">LogIn</a></button>
             <button class="sign"><a href="signup.html">SignUp</a></button>
       </ul>
         </div>
      </nav>
-<!-- starts -->
-   <div class="contact-header">
-<h1>Contact Us</h1>
-<!-- <p>We'd lovw to hear from you! Whether you need help choosing a crochet piece or want a custom design,feel free to reach out anytime</p> -->
-   </div>
-<section class="contact-section">
-<div class="left-info">
-<h3>Speak With Us</h3>
-<p>Reach out to us for enquiries about our handmade crochet pieces, <br>custom orders,pricing,or delivery details. We're always happy to assist you.</p>
-<div class="info-box">
-<i class="fa-solid fa-location-dot"></i>
-<div>
-  <h4>Store Address:</h4>
-  <p>No 11,Olaiya Street,Makoko,Yaba,Lagos State.</p>
-</div>
-</div>
-<div class="info-box">
-<i class="fa-solid fa-phone"></i>
-<div>
-  <h4>Call Us:</h4>
-  <p>+234 706 601 9705.</p>
-</div>
-</div>
-<div class="info-box">
-<i class="fa-solid fa-globe"></i>
-<div>
-  <h4>Website:</h4>
-  <p>tsthread.netlify.com</p>
-</div>
-</div>
-</div>
 
-<div class="right-form">
-<h3>24/7 Support:</h3>
-<p>Get in touch with our team anytime. Fill the form below:</p>
-<form id="contactForm">
-  <div class="input-row">
-<input type="text" placeholder="First name"><br>
-<input type="text" placeholder="Last name">
-  </div>
-  <div class="input-row">
-<input type="email" placeholder="Email"><br>
-<input type="text" placeholder="Phone Number">
-  </div>
-  <textarea placeholder="Your Message"></textarea>
-  <button type="submit" class="send-btn">Send Message</button>
-  <p id="success-msg" style="display:none; color:green;">
-    Message sent successfully<i class="fa-solid fa-check"></i>
-  </p>
+<div class="login-container">
+<h2>Welcome Back</h2>
+<p class="subtitle">Log in to access your account</p>
+<form action="#" class="login-form">
+<div class="input-group">
+<label>Email:</label>
+<input type="email" placeholder="Enter your email" required>
+</div>
+<div class="input-group">
+    <label>Password:</label>
+    <input type="password" placeholder="Enter your password" required>
+</div>
+<button type="submit" class="login-btn">Login</button>
+<p class="signup-text">Don't have an account?<a href="signup.html">Signup</a></p>
 </form>
 </div>
-</section>
-
-<section class="services-row">
-<div class="service">
-<i class="fa-solid fa-truck"></i>
-<h4>Free Shipping</h4>
-<p>Free delivery over <i class="fa-solid fa-naira-sign"></i>2500.</p>
-</div>
-<div class="service">
-   <i class="fa-solid fa-headset"></i>
-   <h4>24/7 Support</h4> 
-   <p>We are always here for you.</p>
-</div>
-
-<div class="service">
-<i class="fa-solid fa-lock"></i>
-<h4>Secure Payment</h4>
-<p>Multiple safe options.</p>
-</div>
-</section>
-<section class="map-section">
-<iframe 
-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7928.339909173717!2d3.3782442679370726!3d6.500157016433888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c8da642e481%3A0x42d33769d3ebadba!2sMakoko%2C%20Lagos%20101245%2C%20Lagos!5e0!3m2!1sen!2sng!4v1765271516250!5m2!1sen!2sng" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" >
-
-</iframe>
-</section>
 
 
+
+
+
+
+
+
+
+    
 
 <footer class="footer">
       <div class="footer-container">
@@ -172,18 +120,5 @@ src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7928.339909173717!2d3
 <p>@2025 Ts Thread.All Rights Reserved.</p>
  </div>
      </footer>
-
-
-
-
-  
-
-
-    
-          <!-- footer ends-->
-
-
-         
-<script src="index.js"></script>
 </body>
 </html>

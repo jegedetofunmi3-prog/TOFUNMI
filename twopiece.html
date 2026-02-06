@@ -16,26 +16,33 @@
         <div class="navdiv">
             <div class="logo">Ts Thread</div>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" >Home</a></li>
                 <li><a href="about.html">About</a></li>
-               <li class="dropdown">
-                  <a href="product.html" class="dropbtn">Products</a>
-                  <ul class="dropdown-menu">
+                <li><a href="service.html">Gallery</a></li>
+                <li class="dropdown">
+                  <a href="product.html" class="active">Products</a>
+                  <!-- <ul class="dropdown-menu">
                     <li><a href="bags.html">Crochet Tote Bags</a></li>
                     <li><a href="cardigans.html">Crochet Cardigans</a></li>
                     <li><a href="product.html">Crochet Beanies</a></li>
                     <li><a href="shirts.html">Crochet Shirts</a></li>
+                   
                     <li><a href="twopiece.html">Crochet Two-Piece</a></li>
                     <li><a href="pants.html">Crochet Pants</a></li>
-                  </ul>
+                    
+                  </ul> -->
                 </li>
-            
-                <li><a href="service.html">Gallery</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="test.html">Testimonials</a></li>
+              
+                
                 <li><a href="contact.html">Contact</a></li>
-            </ul>
+                 <a href="cart.html" class="cart-icon" id="cart-icon"></a>
+          <i  class="fas fa-shopping-cart"></i>
+          <!-- <span id="cart-count">0</span> -->
+            <button class="log"><a href="login.html">LogIn</a></button>
+            <button class="sign"><a href="signup.html">SignUp</a></button>
+      </ul>
         </div>
+        
      </nav>
 
      <section class="product-section">
@@ -65,9 +72,9 @@
 <div class="image">
     <img src="/twopice/tp1.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href=""  class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Crochet Two-piece Outfit-With shade of multiple colors" data-price="120,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -83,9 +90,9 @@
 <div class="image">
     <img src="/twopice/tp2.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href="" class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Crochet Two-piece Outfit-With shade of brown and multiple colors" data-price="120,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -100,14 +107,14 @@
 <div class="image">
     <img src="/twopice/tp3.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href="" class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Crochet Two-piece Outfit-With shade of red,brown and white color" data-price="120,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
     <h4>Crochet Two-piece Outfit</h4>
-    <p>With shade of red,brown and white colors</p>
+    <p>With shade of red,brown and white color</p>
     <div class="price"><i class="fa-solid fa-naira-sign"></i>120,000</div>
 </div>
 </div>
@@ -117,9 +124,9 @@
 <div class="image">
     <img src="/twopice/tp4.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href="" class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Crochet Two-piece Outfit-With shade of brown color and flower design" data-price="120,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -134,14 +141,14 @@
 <div class="image">
     <img src="/twopice/tp5.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href=""  class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Crochet Two-piece Outfit-With shade of brown color. For men" data-price="120,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
     <h4>Crochet Two-piece Outfit</h4>
-    <p>With shade of brown color.For men</p>
+    <p>With shade of brown color. For men</p>
     <div class="price"><i class="fa-solid fa-naira-sign"></i>120,000</div>
 </div>
 </div>
@@ -151,9 +158,9 @@
 <div class="image">
     <img src="/twopice/tp6.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href="" class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Crochet Two-piece Outfit-Unisex" data-price="120,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -168,9 +175,9 @@
 <div class="image">
     <img src="/twopice/tp7.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href=""  class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Crochet Two-piece Outfit-With shade of blue and cream color" data-price="120,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -185,9 +192,9 @@
 <div class="image">
     <img src="/twopice/tp8.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href="" class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Crochet Two-piece Outfit-Armless with shade of green and yellow color" data-price="120,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -202,14 +209,14 @@
 <div class="image">
     <img src="/twopice/tpgreen.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href=""  class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Crochet Two-piece Outfit-with shade of white and green color" data-price="120,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
     <h4>Crochet Two-piece Outfit</h4>
-    <p>With shade of white and green colors.</p>
+    <p>With shade of white and green color.</p>
     <div class="price"><i class="fa-solid fa-naira-sign"></i>120,000</div>
 </div>
 </div>
@@ -219,9 +226,9 @@
 <div class="image">
     <img src="/twopice/tpladies2.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href=""  class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Crochet Two-piece Outfit-For Ladies" data-price="120,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -236,9 +243,9 @@
 <div class="image">
     <img src="/twopice/tpladies3.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href="" class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Crochet Two-piece Outfit-For Ladies" data-price="90,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -253,9 +260,9 @@
 <div class="image">
     <img src="/twopice/tpladies4.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href=""  class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Crochet Two-piece Outfit-For Ladies" data-price="90,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -270,9 +277,9 @@
 <div class="image">
     <img src="/twopice/tpladies5.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href=""  class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Crochet Two-piece Outfit-For Ladies" data-price="90,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -287,9 +294,9 @@
 <div class="image">
     <img src="/twopice/tpladies6.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href=""  class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Crochet Two-piece Outfit-For Ladies" data-price="90,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -304,9 +311,9 @@
 <div class="image">
     <img src="/twopice/tpladies7.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href=""  class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Crochet Two-piece Outfit-For Ladies" data-price="90,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -321,9 +328,9 @@
 <div class="image">
     <img src="/twopice/tpladies8.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href="" class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Crochet Two-piece Outfit-For Ladies" data-price="90,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -338,9 +345,9 @@
 <div class="image">
     <img src="/twopice/2.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href=""  class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Crochet Two-piece Outfit-For Ladies" data-price="90,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -349,15 +356,15 @@
     <div class="price"><i class="fa-solid fa-naira-sign"></i>90,000</div>
 </div>
 </div>
-
+<!-- 18 -->
  <div class="box">
 <span class="discount">-3%</span>
 <div class="image">
     <img src="/twopice/3.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href=""  class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Crochet Two-piece Outfit-For Ladies" data-price="120,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -371,48 +378,60 @@
          </div>
      </section>
     
+ <div class="pagination">
+<a href="bags.html">Bags</a>
+<a href="cardigans.html">Cardigans</a>
+<a href="pants.html">Pants</a>
+<a href="twopiece.html" class="active">Two-piece</a>
+<a href="shirts.html">Shirts</a>
+<a href="product.html">Beanies</a>
+   </div>
+
+
 <footer class="footer">
       <div class="footer-container">
         <!-- brand -->
 <div class="footer-section">
   <h3 class="footer-logo">Ts Thread</h3>
-  <p class="footer-text">Handmade crochet outfits made with love</p>
+  <p class="footer-text">Handmade crochet outfits <br> made with love</p>
 </div>
 <!-- quick links -->
-<div class="footer-section">
-<h4>Quick Links</h4>
+<div class="footer-links">
+<h4>Quick Links:</h4>
 <ul>
   <li><a href="index.html">Home</a></li>
   <li><a href="about.html">About</a></li>
   <li><a href="product.html">Products</a></li>
-  <li><a href="service.html">Gallery</a></li>
+  <!-- <li><a href="service.html">Gallery</a></li> -->
   <li><a href="faq.html">FAQ</a></li>
   <li><a href="test.html">Testimonials</a></li>
   <li><a href="contact.html">Contact</a></li>
 </ul>
 </div>
 <!-- products -->
- <div class="footer-section">
-<h4>Categories</h4>
+ <div class="footer-sect">
+<h4>Categories:</h4>
 <ul>
   <li><a href="product.html">Beanies</a></li>
   <li><a href="bags.html">Tote Bags</a></li>
+ 
 <li><a href="cardigans.html">Cardigans</a></li>
 <li><a href="shirts.html">Shirts</a></li>
 <li><a href="twopiece.html">Two-piece</a></li>
+
 <li><a href="pants.html">Pants</a></li>
 </ul>
  </div>
 <!-- contact -->
- <div class="footer-section">
-  <h4>Contact</h4>
+ <div class="footer-sectin">
+  <h4>Contact:</h4>
   <p class="footer-text">+234 706 601 9705</p>
   <p class="footer-text">TsThread@gmail.com</p>
   <p class="footer-text">📍Lagos,Nigeria</p>
   <div class="social-links">
-    <a href="">Instagram</a>
-    <a href="">TikTok</a>
-    <a href="">WhatsApp</a>
+    <a href=""><i class="fa-brands fa-instagram"></i>Instagram</a>
+    <a href=""><i class="fa-brands fa-tiktok"></i>TikTok</a>
+    <a href=""><i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
   </div>
  </div>
  </div>
@@ -421,5 +440,14 @@
  </div>
      </footer>
 
+
+
+
+
+
+
+
+
+     <script src="index.js"></script>
 </body>
 </html>

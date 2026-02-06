@@ -16,28 +16,33 @@
         <div class="navdiv">
             <div class="logo">Ts Thread</div>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" >Home</a></li>
                 <li><a href="about.html">About</a></li>
-               <li class="dropdown">
-                  <a href="product.html" class="dropbtn">Products</a>
-                  <ul class="dropdown-menu">
+                <li><a href="service.html">Gallery</a></li>
+                <li class="dropdown">
+                  <a href="product.html" class="active">Products</a>
+                  <!-- <ul class="dropdown-menu">
                     <li><a href="bags.html">Crochet Tote Bags</a></li>
                     <li><a href="cardigans.html">Crochet Cardigans</a></li>
                     <li><a href="product.html">Crochet Beanies</a></li>
                     <li><a href="shirts.html">Crochet Shirts</a></li>
-
+                   
                     <li><a href="twopiece.html">Crochet Two-Piece</a></li>
                     <li><a href="pants.html">Crochet Pants</a></li>
                     
-                  </ul>
+                  </ul> -->
                 </li>
-            
-                <li><a href="service.html">Gallery</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="test.html">Testimonials</a></li>
+                
+                
                 <li><a href="contact.html">Contact</a></li>
-            </ul>
+                 <a href="cart.html" class="cart-icon" id="cart-icon"></a>
+          <i  class="fas fa-shopping-cart"></i>
+          <!-- <span id="cart-count">0</span> -->
+            <button class="log"><a href="login.html">LogIn</a></button>
+            <button class="sign"><a href="signup.html">SignUp</a></button>
+      </ul>
         </div>
+        
      </nav>
 
      <section class="product-section">
@@ -67,9 +72,9 @@
 <div class="image">
     <img src="/bag/white 1.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href="" class="like-icon fas fa-heart"></a>
+    <a href="" class="cart-btn" data-name="White Tote Bag with the shade of red color" data-price="12,000" onclick="addToCart(event, this)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -85,9 +90,9 @@
 <div class="image">
     <img src="/bag/white 2.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href="" class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="White Tote Bag With shade of burgundy color" data-price="12,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -102,9 +107,9 @@
 <div class="image">
     <img src="/bag/black 4.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href=""  class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="White Tote Bag-Simple Design" data-price="12,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -119,9 +124,9 @@
 <div class="image">
     <img src="/bag/white 3.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href=""  class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Black Tote Bag With shade of white and grey color" data-price="12,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -136,9 +141,9 @@
 <div class="image">
     <img src="/bag/black 2.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href=""  class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Black Tote Bag With shade of white color" data-price="12,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -153,9 +158,9 @@
 <div class="image">
     <img src="/bag/black 3.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href="" class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Black Tote Bag With shade of white and grey color" data-price="12,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -170,9 +175,9 @@
 <div class="image">
     <img src="/bag/beige 1.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href=""  class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Beige Tote Bag With shade of brown color" data-price="12,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -187,9 +192,9 @@
 <div class="image">
     <img src="/bag/beige 2.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href=""  class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Beige Tote Bag With shade of white color" data-price="12,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -204,9 +209,9 @@
 <div class="image">
     <img src="/bag/brown 1.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href=""  class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Brown Tote Bag With shade of white color" data-price="12,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -221,9 +226,9 @@
 <div class="image">
     <img src="/bag/brown 2.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href=""  class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Brown Tote Bag With shade of white color" data-price="12,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -238,9 +243,9 @@
 <div class="image">
     <img src="/bag/brown 3.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href=""  class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Brown Tote Bag With Love Design" data-price="12,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -255,9 +260,9 @@
 <div class="image">
     <img src="/bag/brown 4.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href=""  class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Brown Tote Bag-Custom Brown Tote Bag" data-price="12,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -272,9 +277,9 @@
 <div class="image">
     <img src="/bag/black 1.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href=""  class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Army Green Tote Bag With Love Design" data-price="12,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -289,9 +294,9 @@
 <div class="image">
     <img src="/bag/green 1.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href="" class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Forest Green Tote Bag With Flower Design" data-price="12,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -306,9 +311,9 @@
 <div class="image">
     <img src="/bag/green 2.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href="" class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Green Tote Bag With shade of white colo" data-price="12,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -323,9 +328,9 @@
 <div class="image">
     <img src="/bag/green 3.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href="" class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Green Tote Bag With shade of white color" data-price="12,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -340,9 +345,9 @@
 <div class="image">
     <img src="/bag/pink 1.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href="" class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Pink Tote Bag With shade of white color" data-price="12,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -357,9 +362,9 @@
 <div class="image">
     <img src="/bag/pink 2.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href="" class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Pink Tote Bag With shade of cream color" data-price="12,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -374,9 +379,9 @@
 <div class="image">
     <img src="/bag/pink 3.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href="" class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Pink Tote Bag With Smiley Design" data-price="12,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -391,9 +396,9 @@
 <div class="image">
     <img src="/bag/purple 1.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href="" class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Purple Tote Bag With Love Design" data-price="12,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -408,9 +413,9 @@
 <div class="image">
     <img src="/bag/purple 2.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href="" class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Purple Tote Bag With Love Design" data-price="12,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -425,9 +430,9 @@
 <div class="image">
     <img src="/bag/purple 3.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href=""  class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Purple Tote Bag With shade of purple color" data-price="12,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -442,9 +447,9 @@
 <div class="image">
     <img src="/bag/yellow 1.jpg" alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href="" class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Yellow Tote Bag With shade of beige color" data-price="12,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -459,9 +464,9 @@
 <div class="image">
     <img src="/bag/yellow 4.jpg " alt="">
 <div class="icons">
-    <a href="" class="fas fa-heart"></a>
-    <a href="" class="cart-btn">Add to Cart</a>
-    <a href="" class="fas fa-share"></a>
+    <a href="" class="like-icon fas fa-heart"></a>
+    <a href="cart.html" class="cart-btn" data-name="Yellow Tote Bag With shade of white color" data-price="12,000" onclick="saveProduct(event)">Add to Cart</a>
+    <a href="" class="share-btn fas fa-share" onclick="shareProduct(event)"></a>
     </div>
 </div>
 <div class="content">
@@ -474,48 +479,61 @@
          </div>
      </section>
     
+
+      <div class="pagination">
+<a href="bags.html" class="active">Bags</a>
+<a href="cardigans.html">Cardigans</a>
+<a href="pants.html">Pants</a>
+<a href="twopiece.html">Two-piece</a>
+<a href="shirts.html">Shirts</a>
+<a href="product.html">Beanies</a>
+   </div>
+
+
 <footer class="footer">
       <div class="footer-container">
         <!-- brand -->
 <div class="footer-section">
   <h3 class="footer-logo">Ts Thread</h3>
-  <p class="footer-text">Handmade crochet outfits made with love</p>
+  <p class="footer-text">Handmade crochet outfits <br> made with love</p>
 </div>
 <!-- quick links -->
-<div class="footer-section">
-<h4>Quick Links</h4>
+<div class="footer-links">
+<h4>Quick Links:</h4>
 <ul>
   <li><a href="index.html">Home</a></li>
   <li><a href="about.html">About</a></li>
   <li><a href="product.html">Products</a></li>
-  <li><a href="service.html">Gallery</a></li>
+  <!-- <li><a href="service.html">Gallery</a></li> -->
   <li><a href="faq.html">FAQ</a></li>
   <li><a href="test.html">Testimonials</a></li>
   <li><a href="contact.html">Contact</a></li>
 </ul>
 </div>
 <!-- products -->
- <div class="footer-section">
-<h4>Categories</h4>
+ <div class="footer-sect">
+<h4>Categories:</h4>
 <ul>
   <li><a href="product.html">Beanies</a></li>
   <li><a href="bags.html">Tote Bags</a></li>
+ 
 <li><a href="cardigans.html">Cardigans</a></li>
 <li><a href="shirts.html">Shirts</a></li>
 <li><a href="twopiece.html">Two-piece</a></li>
+
 <li><a href="pants.html">Pants</a></li>
 </ul>
  </div>
 <!-- contact -->
- <div class="footer-section">
-  <h4>Contact</h4>
+ <div class="footer-sectin">
+  <h4>Contact:</h4>
   <p class="footer-text">+234 706 601 9705</p>
   <p class="footer-text">TsThread@gmail.com</p>
   <p class="footer-text">📍Lagos,Nigeria</p>
   <div class="social-links">
-    <a href="">Instagram</a>
-    <a href="">TikTok</a>
-    <a href="">WhatsApp</a>
+    <a href=""><i class="fa-brands fa-instagram"></i>Instagram</a>
+    <a href=""><i class="fa-brands fa-tiktok"></i>TikTok</a>
+    <a href=""><i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
   </div>
  </div>
  </div>
@@ -524,5 +542,7 @@
  </div>
      </footer>
 
+
+     <script src="index.js"></script>
 </body>
 </html>
